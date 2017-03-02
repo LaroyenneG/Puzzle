@@ -1,0 +1,78 @@
+body {
+    background-image:url('../Asset/spiral.jpg');
+    margin: auto;
+    position: relative;
+}
+
+
+/* menu de navigation*/
+
+#menu table{
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+#menu td{
+    border-radius: 50px;
+    position: relative;
+    width: 100px;
+    height: 40px;
+}
+
+#menu button{
+    border-radius: 50px;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+
+
+
+/* zone de configuration */
+
+#navSize{
+    padding-top: 40px;
+}
+
+#navSize table {
+    margin: auto;
+    border-spacing: 100px 20px;
+}
+
+#navSize td {
+    text-align :center;
+}
+
+#navSize button{
+    width : 100px;
+    height : 50px;
+    text-align : center;
+    color : black;
+    font-size: large;
+}
+
+
+
+/* zone des scores */
+
+#scoresTable{
+    padding-top: 60px;
+}
+
+#scoresTable table{
+    margin: auto;
+    border: 5px solid cadetblue;
+    background-color: azure;
+    border-spacing: 50px 20px;
+}
+
+#scoresTable th{
+    text-align :center;
+    font-size: 30px;
+}
+
+#scoresTable td{
+    text-align :center;
+}

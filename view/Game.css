@@ -1,0 +1,68 @@
+body {
+	background-image:url('../Asset/galaxie.jpg');
+	margin: auto;
+	position: relative;
+}
+
+/* menu de navigation*/
+
+#menu table{
+	margin: auto;
+	text-align: center;
+	padding: 20px;
+}
+#menu td{
+	border-radius: 50px;
+	position: relative;
+	width: 100px;
+	height: 40px;
+}
+
+#menu button{
+	border-radius: 50px;
+	position: relative;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+}
+
+
+/* zone de jeu */
+
+#game {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#timer{
+	text-align : center;
+	color : aliceblue;
+}
+
+/* zone de configuration */
+
+#initGame table{
+	margin : auto;
+	text-align :center;
+	background-color : white;
+	border-spacing : 5px 5px;
+}
+
+#initGame button{
+	width : 110px;
+	height : 50px;
+	text-align : center;
+	color : black;
+	font-size: large;
+}
+
+
+/* zone de jeu */
+
+#puzzle table{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
