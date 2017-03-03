@@ -26,7 +26,7 @@ function clicSizeGrid(m) {
         }
     };
 
-    xmlhttp.open("GET","../Serveur/getData.php?sizeGrid="+m,true);
+    xmlhttp.open("GET","../serveur/getData.php?sizeGrid="+m,true);
     xmlhttp.send();
 }
 

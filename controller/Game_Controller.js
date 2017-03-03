@@ -34,7 +34,7 @@ function saveWinner(time) {
     var username=prompt("Bravo vous avez gagné en "+time+" secondes\n   Entrez votre nom : ","");
     if(username!=null){
         xmlhttp=new XMLHttpRequest();
-        xmlhttp.open("POST","../Serveur/saveData.php",true);
+        xmlhttp.open("POST","../serveur/saveData.php",true);
         xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
         xmlhttp.send("nomJoueur="+username+"&timeGame="+time+"&sizeGrid="+sizeGrid);
     }
