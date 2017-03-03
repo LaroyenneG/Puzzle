@@ -6,7 +6,7 @@
  * Time: 16:08
  */
 
-$link=mysqli_connect("localhost", "root", "Scipion90*");
+$link=mysqli_connect("localhost", "root", "scipio");
 
 if (!$link) {
     echo "Connexion impossible : ".mysqli_error($link);
