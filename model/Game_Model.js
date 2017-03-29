@@ -119,13 +119,13 @@ function pieceCreator(i) {
     var width=Math.floor(image_x/sizeGrid);
     var height=Math.floor(image_y/sizeGrid);
 
-    var div = document.createElement('div');
+    var div = document.createElement("div");
 
-    div.style.width = width + 'px';
-    div.style.height = height + 'px';
+    div.style.width = width + "px";
+    div.style.height = height + "px";
 
     if(i!=sizeGrid*sizeGrid){
-        div.style.backgroundImage = 'url(' + "../Asset/"+image + ')';
+        div.style.backgroundImage = "url(" + "../Asset/"+image + ")";
     }else {
         div.style.backgroundColor="black";
     }
@@ -185,13 +185,26 @@ function dispMenuSize() {
 
 
     var menuSize = document.createElement("table");
-    menuSize.innerHTML="<tr><th>Taille de la grille</th></tr>";
+
+    var trTitle=document.createElement("tr");
+
+    var th=document.createElement("th");
+
+    th.innerHTML="Taille de la grille";
+
+    trTitle.appendChild(th);
+
+    menuSize.appendChild(trTitle);
 
     for(var m=2; m<=5; m++){
+
         var tr1=document.createElement("tr");
+
         var td1=document.createElement("td");
 
+
         var button1=document.createElement("button");
+
         button1.setAttribute("type","button");
         button1.setAttribute("onClick","clicSizeGrid("+m+")");
 
@@ -215,13 +228,24 @@ function dispMenuPhoto() {
 
     var menuPhoto = document.createElement("table");
 
-    menuPhoto.innerHTML="<tr><th>Photo</th></tr>";
+    var trTitle=document.createElement("tr");
+
+    var th=document.createElement("th");
+
+    th.innerHTML="Photos";
+
+    trTitle.appendChild(th);
+
+    menuPhoto.appendChild(trTitle);
 
     var nameImage= ["Belouga","f 117","Concorde","antonov 225","A380"];
 
     for(var i=0; i<nameImage.length; i++){
+
         var tr2=document.createElement("tr");
+
         var td2=document.createElement("td");
+
         var button2=document.createElement("button");
 
         button2.setAttribute("type","button");

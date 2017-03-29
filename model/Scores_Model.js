@@ -19,16 +19,20 @@ function dispMenuSize() {
         var td=document.createElement("td");
 
         var button=document.createElement("button");
+
         button.setAttribute("type","button");
+
         button.setAttribute("onClick","clicSizeGrid("+m+")");
 
         button.innerHTML=m+" X "+m;
 
         td.appendChild(button);
+
         tr.appendChild(td);
     }
 
     menuSize.appendChild(tr);
+
     node.appendChild(menuSize);
 }
 
@@ -40,16 +44,26 @@ function dispTableScores(array) {
 
     var table=document.createElement("table");
 
-    table.innerHTML="<tr><th>Rank</th><th>User name</th><th>Time</th></tr>";
+    var trTitle=document.createElement("tr");
+
+    trTitle.innerHTML="<th>Rank</th><th>User name</th><th>Time</th>";
+
+    table.appendChild(trTitle);
 
     for(var i=0; i<array.length; i++){
+
         var tr=document.createElement("tr");
+
         var rang=document.createElement("td");
+
         var login=document.createElement("td");
+
         var timeGame=document.createElement("td");
 
         rang.innerHTML=i+1;
+
         login.innerHTML=array[i][0];
+
         timeGame.innerHTML=array[i][1];
 
         tr.appendChild(rang);
