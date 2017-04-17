@@ -145,7 +145,6 @@ function dispTaquin() {
 	game.innerHTML="";
 
 
-
     for(var y=0; y<grid.length; y++){
         for(var x=0; x<grid[y].length; x++){
             var node = pieceCreator(grid[y][x]);
